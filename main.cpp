@@ -56,5 +56,32 @@ int main() {
     std::cout << "Total sum: "  << sum << std::endl;
     */
 
-   
+    // hw 13.6.3
+    /*
+    std::vector<int> db(10);
+    int realSize = 0;
+    int number;
+    while (true) {
+        std::cout << "Input number:\n";
+        std::cin >> number;
+        if (number == -1) {
+            std::cout << "Database: ";
+            for (int i = 0; i< db.size(); i++) {
+                std::cout << db[i] << " ";
+            }
+            std::cout << std::endl;
+        } else if (realSize < db.size()) {
+            db[realSize] = number;
+            realSize++;
+        } else {
+            for (int i = 0; i < db.size() - 1; i++) {
+                std::swap(db[i], db[i+1]);
+            }
+            db[db.size()-1] = number;
+        }
+    }
+    */
+
+
+
 }
