@@ -40,6 +40,21 @@ int main() {
         std::cout << vec[i] << " ";
     }
     */
-   
 
+    // 13.6.2 
+    /*
+    float sum = 0;
+    std::vector<float> prices {2.5, 4.25, 3.0, 10.0};
+    std::vector<int> items {1, 1, 0, 3};
+    for (int i = 0; i < items.size(); i++) {
+        if (items[i] < 0 || items[i] >= prices.size()) {
+            std::cout << "Incorrect item number: " << items[i] << ". It won't be taken into account in the calculation.\n";
+        } else {
+            sum += prices[items[i]];
+        }
+    }
+    std::cout << "Total sum: "  << sum << std::endl;
+    */
+
+   
 }
